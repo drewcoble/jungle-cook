@@ -1,0 +1,92 @@
+.home-bg {
+  background: linear-gradient(to bottom, rgba($red, 0.5), rgba($red, 0.5)),
+    url("/images/hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.home-content {
+  margin: 0 auto;
+  height: 450px;
+  width: 500px;
+  //   background-color: $lightgreen;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  .y-circle {
+    height: 357.58px;
+    width: 357.58px;
+    border-radius: 358px;
+    background-color: $yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    z-index: 97;
+    box-shadow: $box-shadow;
+    // margin-top: 50px;
+    animation: home-anim-in-pink 0.7s 0.35s both;
+
+    p {
+      width: 158px;
+      height: 75px;
+      margin: 9px auto 0;
+    }
+  }
+
+  .p-circle {
+    height: 167.88px;
+    width: 167.88px;
+    border-radius: 168px;
+    background-color: $lightpink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    box-shadow: $box-shadow;
+    z-index: 96;
+    margin-left: -70.46px;
+    margin-top: -54.1px;
+    margin-bottom: 189.7px;
+    animation: home-anim-in-yellow 0.7s 0.7s both;
+
+    p {
+      width: 105.76px;
+      height: 34.77px;
+      margin: 0 auto 10px;
+      font-size: 10px;
+      font-style: italic;
+    }
+  }
+}
+
+@keyframes home-anim-in-yellow {
+  from {
+    height: 0px;
+    width: 0px;
+    opacity: 0;
+  }
+  to {
+    height: 167.88px;
+    width: 167.88px;
+    opacity: 1;
+  }
+}
+
+@keyframes home-anim-in-pink {
+  from {
+    height: 0px;
+    width: 0px;
+    opacity: 0;
+  }
+  to {
+    height: 357.58px;
+    width: 357.58px;
+    opacity: 1;
+  }
+}

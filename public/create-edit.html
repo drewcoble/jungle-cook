@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Create/Edit Recipe</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Caveat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://use.typekit.net/kbv6wma.css" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="create-edit-bg-div">
+      <div class="site-container">
+        <nav>
+          <img src="images/logo.png" alt="" />
+          <div class="nav-right">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="browse.html" class="nav-link">Browse</a>
+            <a href="create-edit.html" class="nav-link active">Create Recipe</a>
+            <a href="recipe-details.html" class="nav-link">Recipe Details</a>
+            <a href="login.html" class="login-button">Login</a>
+          </div>
+          <!-- END of nav-right div -->
+        </nav>
+
+        <div class="create-edit-content">
+          <h2>Hey {user first name}, create/edit your recipe!</h2>
+          <div class="details-div">
+            <div class="input-icon-div">
+              <input type="text" placeholder="Add Recipe Image" />
+              <div class="image-button">Attach file</div>
+            </div>
+            <input type="text" placeholder="Recipe Name" />
+            <input type="text" placeholder="Recipe Description" />
+            <input type="text" placeholder="Recipe Total Time" />
+            <input type="text" placeholder="Recipe Total Servings" />
+          </div>
+
+          <div class="details-div">
+            <h3>Enter Ingredients:</h3>
+            <input type="text" placeholder="Ingredient #1" />
+            <input type="text" placeholder="Ingredient #2" />
+            <div class="input-icon-div">
+              <input type="text" placeholder="Ingredient #3" />
+              <div class="add-row-button">+</div>
+            </div>
+          </div>
+          <div class="details-div">
+            <h3>Enter Instructions:</h3>
+            <input type="text" placeholder="Instruction #1" />
+            <input type="text" placeholder="Instruction #2" />
+            <div class="input-icon-div">
+              <input type="text" placeholder="Instruction #3" />
+              <div class="add-row-button">+</div>
+            </div>
+          </div>
+          <div class="submit-recipe-button">Create/Update Recipe</div>
+        </div>
+        <!-- END of create-edit-content div -->
+        <footer>
+          <div class="footer-left">Copyright &copy; 2019 The Jungle Cook</div>
+          <div class="footer-middle">
+            <div class="footer-div">Login</div>
+            <div class="footer-div">Recipes by Category</div>
+            <div class="footer-div">Privacy and Copyright</div>
+            <div class="footer-div">Create Recipe</div>
+            <div class="footer-div">Your Recipes</div>
+          </div>
+          <div class="footer-right">
+            <img class="footer-social" src="images/facebook.svg" alt="" />
+            <img class="footer-social" src="images/instagram.svg" alt="" />
+          </div>
+        </footer>
+      </div>
+      <!-- END of content-container div -->
+    </div>
+  </body>
+</html>

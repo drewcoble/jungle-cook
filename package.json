@@ -1,0 +1,18 @@
+{
+  "name": "jungle-cook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "firebase-deploy": "firebase deploy --except functions",
+    "sass": "node-sass public/scss/styles.scss public/css/styles.css -w",
+    "firebase-serve": "firebase serve --only hosting"
+  },
+  "author": "Drew Coble",
+  "license": "ISC",
+  "devDependencies": {
+    "firebase-tools": "^7.12.1",
+    "jquery": "^3.4.1",
+    "node-sass": "^4.13.1"
+  }
+}

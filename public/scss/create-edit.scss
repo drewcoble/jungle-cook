@@ -1,0 +1,68 @@
+.create-edit-bg {
+  background-color: $white;
+}
+
+.create-edit-content {
+  width: 75%;
+  //   background-color: $lightpink;
+  margin: 60px 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    margin-bottom: 60px;
+    width: 100%;
+  }
+
+  .details-div {
+    width: 100%;
+    margin-bottom: 50px;
+
+    .input-div {
+      display: flex;
+      .image-button {
+        @include site-button(110px, 36px, $pink, 17px);
+        margin-left: -110px;
+        margin-top: -9px;
+      }
+      .add-row-button {
+        height: 38px;
+        width: 38px;
+        border-radius: 38px;
+        background-color: $pink;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: -38px;
+        margin-top: -9px;
+        font-family: $font-gillsans;
+        font-weight: 100;
+        color: $white;
+        padding: 0 0 2px;
+        cursor: pointer;
+      }
+    }
+    h3 {
+      font-size: 20px;
+      font-family: $font-gillsans;
+      letter-spacing: 2px;
+      margin-bottom: 30px;
+    }
+    input {
+      border: none;
+      border-bottom: 3px solid $black;
+      font-size: 20px;
+      font-family: $font-gillsans;
+      letter-spacing: 2px;
+      width: 100%;
+      margin-bottom: 80px;
+      padding: 2.5px;
+    }
+  }
+
+  .submit-recipe-button {
+    @include site-button(422px, 52px, $pink);
+  }
+}

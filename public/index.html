@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Jungle Cook</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Caveat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://use.typekit.net/kbv6wma.css" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="images/mini-logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div id="image-div" class="home-bg">
+      <div class="alert-container">
+        <div class="alert-box">
+          <h2 id="alert-message">
+            Are you sure you want to delete this recipe?
+          </h2>
+          <div class="alert-buttons">
+            <div id="delete">Delete</div>
+            <div id="cancel">Cancel</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-container">
+        <nav>
+          <img class="home nav-logo" src="images/logo.png" alt="" />
+          <div class="nav-right">
+            <div id="home" class="home nav-link active">Home</div>
+            <div id="browse-recipes" class="nav-link">Browse</div>
+            <div id="create-recipe" class="nav-link">Create Recipe</div>
+            <div id="your-recipes" class="nav-link">Your Recipes</div>
+            <!-- <div id="recipe-details" class="nav-link">Recipe Details</div> -->
+            <div id="login" class="login-button">Login</div>
+          </div>
+          <!-- END of nav-right div -->
+          <img class="nav-menu-button" src="images/ham-menu.png" alt="" />
+        </nav>
+
+        <div id="content-container" class="home-content">
+          <div class="y-circle">
+            <h2>The Jungle Cook</h2>
+            <p>
+              The home to various recipes of your choice. Add your own recipe
+              today and fill the world with joy!
+            </p>
+          </div>
+          <div class="p-circle">
+            <p>
+              Want to be a Jungle<br />
+              Cook? Go ahead and<br />
+              the kitchen is yours!
+            </p>
+          </div>
+        </div>
+        <!-- END of home-content div -->
+        <footer>
+          <div class="footer-left">Copyright &copy; 2019 The Jungle Cook</div>
+          <div class="footer-middle">
+            <div class="footer-div">Login</div>
+            <div class="footer-div">Recipes by Category</div>
+            <div class="footer-div">Privacy and Copyright</div>
+            <div class="footer-div">Create Recipe</div>
+            <div class="footer-div">Your Recipes</div>
+          </div>
+          <div class="footer-right">
+            <img class="footer-social" src="images/facebook.svg" alt="" />
+            <img class="footer-social" src="images/instagram.svg" alt="" />
+          </div>
+        </footer>
+      </div>
+      <!-- END of content-container div -->
+    </div>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.14.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.14.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.14.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.8.0/firebase-firestore.js"></script>
+    <script defer src="/__/firebase/7.14.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.14.0/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+    <!-- <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+        try {
+          let app = firebase.app();
+          let features = ["auth", "database", "messaging", "storage"].filter(
+            (feature) => typeof app[feature] === "function"
+          );
+          document.getElementById(
+            "load"
+          ).innerHTML = `Firebase SDK loaded with ${features.join(", ")}`;
+        } catch (e) {
+          console.error(e);
+          document.getElementById("load").innerHTML =
+            "Error loading the Firebase SDK, check the console.";
+        }
+      });
+    </script> -->
+
+    <script src="lib/jquery.min.js"></script>
+    <script src="app/service.js"></script>
+    <script src="app/app.js"></script>
+  </body>
+</html>

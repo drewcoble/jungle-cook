@@ -1,0 +1,19 @@
+@mixin site-button(
+  $width: 100%,
+  $height: 52px,
+  $color: $yellow,
+  $font-size: 25px
+) {
+  height: $height;
+  width: $width;
+  font-family: $font-caveat;
+  font-size: $font-size;
+  letter-spacing: 2.5px;
+  background-color: $color;
+  border-radius: 26px;
+  box-shadow: $box-shadow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
